@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/quranFragment">
+
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.islamiapp.ui.fragments.quran.QuranFragment"
+        android:label="QuranFragment"
+        tools:layout="@layout/fragment_quran">
+    </fragment>
+
+    <fragment
+        android:id="@+id/hadithFragment"
+        android:name="com.example.islamiapp.ui.fragments.hadith.HadithFragment"
+        android:label="HadithFragment"
+        tools:layout="@layout/fragment_hadith" />
+
+</navigation>

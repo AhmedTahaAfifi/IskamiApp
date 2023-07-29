@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.IslamiAppNoActionBar.splashActivity" parent="Theme.IslamiAppNoActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Disable default splash for API 33 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

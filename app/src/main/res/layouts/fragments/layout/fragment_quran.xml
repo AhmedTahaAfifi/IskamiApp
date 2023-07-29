@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_158sdp"
+        android:layout_height="@dimen/_175sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/quran_logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/gold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp">
+
+            <TextView
+                android:id="@+id/suraName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/separatorLine"
+                android:fontFamily="@font/semi_bold_font"
+                android:gravity="center"
+                android:textColor="@color/brown"
+                android:textSize="@dimen/_19ssp"
+                android:text="اسم السورة" />
+
+            <View
+                android:id="@+id/separatorLine"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gold" />
+
+            <TextView
+                android:id="@+id/aiyaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/separatorLine"
+                android:gravity="center"
+                android:fontFamily="@font/semi_bold_font"
+                android:textColor="@color/brown"
+                android:textSize="@dimen/_19ssp"
+                android:text="عدد الآيات" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/gold"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_sura"/>
+
+</LinearLayout>

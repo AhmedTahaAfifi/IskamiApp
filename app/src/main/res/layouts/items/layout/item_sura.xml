@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_46sdp">
+
+    <TextView
+        android:id="@+id/suraName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/separatorLine"
+        android:fontFamily="@font/kouf_font"
+        android:gravity="center"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/_19ssp"
+        android:textStyle="bold"
+        tools:text="البقرة" />
+
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="@dimen/_2sdp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gold" />
+
+    <TextView
+        android:id="@+id/aiyaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/separatorLine"
+        android:gravity="center"
+        android:fontFamily="@font/kouf_font"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/_19ssp"
+        android:textStyle="bold"
+        tools:text="286" />
+
+</RelativeLayout>

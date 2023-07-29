@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:orderInCategory="0"
+        android:id="@+id/fragmentQuran"
+        android:icon="@drawable/ic_quran"
+        android:title="@string/navigation.menu.title.quran" />
+
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/fragmentHadith"
+        android:icon="@drawable/ic_hadith"
+        android:title="@string/navigation.menu.title.hadith" />
+
+    <item
+        android:orderInCategory="2"
+        android:id="@+id/fragmentSebiha"
+        android:icon="@drawable/ic_sebiha"
+        android:title="@string/navigation.menu.title.sebiha" />
+
+    <item
+        android:orderInCategory="3"
+        android:id="@+id/fragmentRadio"
+        android:icon="@drawable/ic_radio"
+        android:title="@string/navigation.menu.title.radio" />
+
+</menu>

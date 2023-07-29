@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="navigation.menu.title.quran">القرآن</string>
+    <string name="navigation.menu.title.hadith">الأحاديث</string>
+    <string name="navigation.menu.title.sebiha">التسبيح</string>
+    <string name="navigation.menu.title.radio">الراديو</string>
+
+</resources>
