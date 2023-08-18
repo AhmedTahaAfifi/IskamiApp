@@ -2,6 +2,7 @@ package com.example.islamiapp.uitls
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.islamiapp.data.enums.AppLanguage
 import id.voela.actrans.AcTrans
@@ -43,6 +44,24 @@ object HelperMethods {
             }
         }
         if (finishActivity) activity.finish()
+    }
+
+    fun createLog(text: String, isError: Boolean = false) {
+        val tag = "LOG"
+        if (text.length > 4000) {
+            if (isError) {
+                Log.e(tag, text.substring(0, 4000))
+            } else {
+                Log.d(tag, text.substring(0, 4000))
+            }
+            createLog(text.substring(4000), isError)
+        } else {
+            if (isError) {
+                Log.e(tag, text)
+            } else {
+                Log.d(tag, text)
+            }
+        }
     }
 
 }

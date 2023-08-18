@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_2sdp">
+
+    <TextView
+        android:id="@+id/ayah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kouf_font"
+        android:textColor="@color/darkNavy"
+        android:textSize="@dimen/_15ssp"
+        tools:text="قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ" />
+
+</LinearLayout>
