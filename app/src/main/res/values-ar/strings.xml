@@ -4,4 +4,6 @@
     <string name="english">الانجليزية</string>
     <string name="arabic">العربية</string>
 
+    <string name="something_went_wrong">حدث خطأ ما ،يرجي اعادة المحاولة لاحقا !</string>
+
 </resources>

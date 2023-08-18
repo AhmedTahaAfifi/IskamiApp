@@ -6,6 +6,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/gold" />
+
+    </LinearLayout>
+
     <ImageView
         android:layout_width="@dimen/_158sdp"
         android:layout_height="@dimen/_175sdp"
@@ -37,7 +51,7 @@
                 android:gravity="center"
                 android:textColor="@color/brown"
                 android:textSize="@dimen/_19ssp"
-                android:text="اسم السورة" />
+                android:text="@string/fragment.quran.title.surahName" />
 
             <View
                 android:id="@+id/separatorLine"
@@ -47,7 +61,7 @@
                 android:background="@color/gold" />
 
             <TextView
-                android:id="@+id/aiyaNumber"
+                android:id="@+id/ayahNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -57,7 +71,7 @@
                 android:fontFamily="@font/semi_bold_font"
                 android:textColor="@color/brown"
                 android:textSize="@dimen/_19ssp"
-                android:text="عدد الآيات" />
+                android:text="@string/fragment.quran.title.ayahNumber" />
 
         </RelativeLayout>
 
@@ -69,8 +83,10 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quranRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:overScrollMode="never"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_sura"/>
 

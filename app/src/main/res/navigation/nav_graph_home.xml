@@ -7,9 +7,21 @@
 
     <fragment
         android:id="@+id/quranFragment"
-        android:name="com.example.islamiapp.ui.fragments.quran.QuranFragment"
-        android:label="QuranFragment"
+        android:name="com.example.islamiapp.ui.fragments.quran.quran.QuranFragment"
+        android:label="@string/fragment.quran.toolbarTitle"
         tools:layout="@layout/fragment_quran">
+        <action
+            android:id="@+id/action_quranFragment_to_surahFragment"
+            app:destination="@id/surahFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surahFragment"
+        android:name="com.example.islamiapp.ui.fragments.quran.surah.SurahFragment"
+        tools:layout="@layout/fragment_surah">
+        <argument
+            android:name="chapter"
+            app:argType="com.example.islamiapp.data.models.quran.QuranData"/>
     </fragment>
 
     <fragment

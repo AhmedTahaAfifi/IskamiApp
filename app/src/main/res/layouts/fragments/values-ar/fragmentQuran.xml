@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="fragment.quran.toolbarTitle">إسلامي</string>
+    <string name="fragment.quran.title.surahName">اسم السورة</string>
+    <string name="fragment.quran.title.ayahNumber">عدد الآيات</string>
+
+</resources>

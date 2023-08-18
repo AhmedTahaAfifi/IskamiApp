@@ -14,5 +14,7 @@
     <color name="navy">#141A2E</color>
     <color name="darkNavy">#05070D</color>
     <color name="yellow">#FACC1D</color>
+    <color name="red">#982626</color>
+    <color name="white_70">#B2F8F8F8</color>
 
 </resources>
